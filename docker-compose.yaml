@@ -7,7 +7,7 @@ services:
     environment:
       SERVER_PORT: 8080
       # Database
-      SPRING_DATASOURCE_URL: jdbc:postgresql://192.168.10.106:5434/urlaubsverwaltung
+      SPRING_DATASOURCE_URL: jdbc:postgresql://localhost:5434/urlaubsverwaltung
       SPRING_DATASOURCE_USERNAME: urlaubsverwaltung
       SPRING_DATASOURCE_PASSWORD: urlaubsverwaltung
       # Mail
@@ -16,7 +16,7 @@ services:
       UV_MAIL_REPLYTO: urlaubsverwaltung@example.org
       UV_MAIL_REPLYTODISPLAYNAME: urlaubsverwaltung
       UV_MAIL_APPLICATIONURL: http://192.168.10.106:8080
-      SPRING_MAIL_HOST: 192.168.10.106
+      SPRING_MAIL_HOST: localhost
       SPRING_MAIL_PORT: 1025
       # Calendar
       UV_CALENDAR_ORGANIZER: organizer@example.org
@@ -73,7 +73,7 @@ services:
       KC_HOSTNAME_STRICT_HTTPS: 'false'
       KC_HEALTH_ENABLED: 'true'
       KC_CACHE: 'local'
-      KC_HOSTNAME: '192.168.10.106'
+      KC_HOSTNAME: 'localhost'
     ports:
       - '8090:8090'
     volumes:
